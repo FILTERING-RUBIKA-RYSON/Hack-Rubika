@@ -15,10 +15,13 @@
 
 `pip install colorama`
 
-`git clone https://github.com/Filtering-Rubika-Ryson/Hack-Rubika
+`git clone https://github.com/Filtering-Rubika-Ryson/Hack-Rubika`
 
-`cd Hack-Rubika
+`cd Hack-Rubika`
 
 `chmod 777 *`
 
 `python rubika.py`
+
+
+ryson
