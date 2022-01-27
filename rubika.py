@@ -15,12 +15,12 @@ class colorma:
     END = '\033[0m'
 
 
-user = input(f"""{colorma.YELLOW}[?]
+user = input(f"""{colorma.YELLOW}
 
 
 
-.                                                      .
-      .n                     .             .                n.
+                                                     .
+      .n                     . MMD-RYSON  .                n.
   . .dP                   dP               9b               9b   .
  4  qXb         .        dX                 Xb       .      dXp   t
 dX.  9Xb      .dXb     __                     __    dXb.   dXP   .Xb
@@ -40,7 +40,7 @@ dX.  9Xb      .dXb     __                     __    dXb.   dXP   .Xb
                         X. 9         P )X
                          b          '  d'
            
-Please Enter User Rubika Target- [https://web.rubika.ir/#c=uxxxxxxxx] :>{colorma.END} """)
+[?]-Please Enter User Rubika Target- [https://web.rubika.ir/#c=uxxxxxxxx] OR [https://web.rubika.ir/#im?um=@xxxx] :>>{colorma.END} """)
 users = user.split(".")
 try:
     if(users[1] == 'rubika'):
