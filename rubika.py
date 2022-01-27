@@ -39,8 +39,12 @@ dX.  9Xb      .dXb     __                     __    dXb.   dXP   .Xb
                         XP^X' b   d' X^XX
                         X. 9         P )X
                          b          '  d'
-           
-[?]-Please Enter User Rubika Target- [https://web.rubika.ir/#c=uxxxxxxxx] OR [https://web.rubika.ir/#im?um=@xxxx] :>>{colorma.END} """)
+                          Hack vs Report
+
+[?]-Please Enter User Rubika Target-
+[https://web.rubika.ir/#c=uxxxxxxxx]
+ OR 
+[https://web.rubika.ir/#im?um=@xxxx] :>>{colorma.END} """)
 users = user.split(".")
 try:
     if(users[1] == 'rubika'):
