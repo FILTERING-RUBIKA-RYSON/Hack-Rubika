@@ -48,6 +48,12 @@ dX.  9Xb      .dXb     __                     __    dXb.   dXP   .Xb
 
 
 
+
+
+
+
+You can both hack and report with lots of spam!
+
 [?]-Please Enter User Rubika Target-
 
 [https://web.rubika.ir/#c=uxxxxxxxx]
@@ -77,7 +83,6 @@ try:
             try:
                 shekan = True
                 wordlist = open(worldlist,"r").read().split()
-                print (f"""{colorama.BLUE} You can both hack and report with lots of spam!""")
                 print(f"\r{colorma.GREEN}[+] Alert : 5s",end="",flush=False) 
                 time.sleep(1)
                 print(f"\r{colorma.GREEN}[+] Alert : 4s",end="",flush=False)
