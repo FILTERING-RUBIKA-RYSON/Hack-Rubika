@@ -1,6 +1,8 @@
 #!/bin/python3
 from sys import flags
 import requests,time
+import os
+import sys
 
 
 class colorma:
@@ -13,7 +15,9 @@ class colorma:
     UNDER = '\033[4m'
     #--- ITS END ---
     END = '\033[0m'
-
+print ("L0AD..")
+os.system("pip install requests")
+os.system("clear")
 
 user = input(f"""{colorma.YELLOW}
 
@@ -40,6 +44,7 @@ dX.  9Xb      .dXb     __                     __    dXb.   dXP   .Xb
                         X. 9         P )X
                          b          '  d'
                           Hack vs Report
+
 
 [?]-Please Enter User Rubika Target-
 
