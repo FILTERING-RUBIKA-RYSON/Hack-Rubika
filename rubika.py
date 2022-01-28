@@ -18,7 +18,6 @@ class colorma:
 print ("L0AD..")
 os.system("pip install requests")
 os.system("clear")
-print (f"""{colorama.BLUE} You can both hack and report with lots of spam!""")
 user = input(f"""{colorma.YELLOW}
 
 
@@ -78,7 +77,7 @@ try:
             try:
                 shekan = True
                 wordlist = open(worldlist,"r").read().split()
-
+                print (f"""{colorama.BLUE} You can both hack and report with lots of spam!""")
                 print(f"\r{colorma.GREEN}[+] Alert : 5s",end="",flush=False) 
                 time.sleep(1)
                 print(f"\r{colorma.GREEN}[+] Alert : 4s",end="",flush=False)
