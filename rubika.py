@@ -18,7 +18,7 @@ class colorma:
 print ("L0AD..")
 os.system("pip install requests")
 os.system("clear")
-
+print (f"""{colorama.BLUE} You can both hack and report with lots of spam!""")
 user = input(f"""{colorma.YELLOW}
 
 
@@ -100,11 +100,11 @@ try:
 
                         try:
                             if(Target.status_code == 302):
-                                print(f"{colorma.GREEN}[{time.ctime()}] {user}:{80} [Password Found] : {colorma.END}{colorma.CYAN}{word}")
+                                print(f"{colorma.GREEN}[{time.ctime()}] {user}:{80} [ok spam] : {colorma.END}{colorma.CYAN}{word}")
                                 shekan = False
                                 break
                             else:
-                                print(f"{colorma.RED}[{time.ctime()}] {user}:{80} [Cods Not Found] : {colorma.END}{colorma.RED}{word}")
+                                print(f"{colorma.RED}[{time.ctime()}] {user}:{80} [Cods spam] : {colorma.END}{colorma.RED}{word}")
                         except:
                             print(f"{colorma.RED}[X] Error Net : No Internet{colorma.END}")
                             shekan = False        
