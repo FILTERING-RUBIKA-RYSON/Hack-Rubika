@@ -1,4 +1,4 @@
-#!/bin/python3
+#py3
 from sys import flags
 import requests,time
 import os
@@ -55,11 +55,20 @@ dX.  9Xb      .dXb     __                     __    dXb.   dXP   .Xb
 
 You can both hack and report with lots of spam!
 
+
 [?]-Please Enter User Rubika Target-
 
+
 [https://web.rubika.ir/#c=uxxxxxxxx]
+
  OR 
-[https://web.rubika.ir/#im?um=@xxxx]  _:>>>{colorma.END} """)
+
+[https://web.rubika.ir/#im?um=@xxxx] 
+                     
+                    
+
+
+                 --Type user-- _:>>>{colorma.END} """)
 users = user.split(".")
 try:
     if(users[1] == 'rubika'):
