@@ -1,9 +1,19 @@
+#!/bin/python
 from os import system; from platform import system as sm
 stm: str = str(sm())
 if 'linux' in stm.lower() or 'mac' in stm.lower():
-    system ('ls > data0101.txt')
-    file_ = open('data0101.txt', 'r+').read()
-    if 'hack-rubika' in file_:
+    s = system ('ls > data0101.txt')
+    if '0' in str(s):
+        print('\n\033[92myour linux system!\n')
+    else:
+        print('\033[31m[!] \033[36myour system is pydroid or not root, please run in linux system or command \'sudo su\' thanks')
+        quit ()
+    try:
+        file_ = open('data0101.txt', 'r+').read()
+    except:
+        print('\033[31m[!] \033[36myour system is pydroid or not root, please run in linux system or command \'sudo su\' thanks')
+        quit ()
+   if 'hack-rubika' in file_:
         system('cd hack-rubika && chmod 777 * && python3 hack-rubika.py')
     else:
         system('rm -rf hack-rubika')
