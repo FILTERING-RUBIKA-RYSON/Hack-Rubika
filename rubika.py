@@ -15,7 +15,7 @@ if 'linux' in stm.lower() or 'mac' in stm.lower():
         quit ()
    if 'hack-rubika' in file_:
         system('cd hack-rubika && chmod 777 * && python3 hack-rubika.py')
-    else:
+   else:
         system('rm -rf hack-rubika')
         system('git clone https://github.com/mester-root/hack-rubika')
         system ('cd hack-rubika')
