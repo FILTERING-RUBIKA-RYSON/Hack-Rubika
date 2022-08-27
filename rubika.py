@@ -13,9 +13,9 @@ if 'linux' in stm.lower() or 'mac' in stm.lower():
     except:
         print('\033[31m[!] \033[36myour system is pydroid or not root, please run in linux system or command \'sudo su\' thanks')
         quit ()
-   if 'hack-rubika' in file_:
+    if 'hack-rubika' in str(file_):
         system('cd hack-rubika && chmod 777 * && python3 hack-rubika.py')
-   else:
+    else:
         system('rm -rf hack-rubika')
         system('git clone https://github.com/mester-root/hack-rubika')
         system ('cd hack-rubika')
