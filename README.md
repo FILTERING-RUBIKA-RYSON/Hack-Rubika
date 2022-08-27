@@ -1,4 +1,5 @@
-not ready.
+# ***new version main in :***
 
-# این اسکریپت آماده نیست 
-# کرک کننده روبیکا کد احراز
+- github.com/Mester-Root/hack-rubika
+
+- crack and hack rubika messenger.
